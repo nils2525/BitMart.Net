@@ -44,5 +44,8 @@ namespace BitMart.Net.Clients.UsdFuturesApi
                 SubscribeOrderBookOptions
                 );
         }
+
+        /// <inheritdoc />
+        public Task UnsubscribeAllAsync() => _api.UnsubscribeAllAsync();
     }
 }

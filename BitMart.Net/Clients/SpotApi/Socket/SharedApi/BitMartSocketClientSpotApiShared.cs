@@ -43,5 +43,8 @@ namespace BitMart.Net.Clients.SpotApi
                 SubscribeOrderBookOptions
                 );
         }
+
+        /// <inheritdoc />
+        public Task UnsubscribeAllAsync() => _api.UnsubscribeAllAsync();
     }
 }
